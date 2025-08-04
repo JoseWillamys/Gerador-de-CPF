@@ -20,5 +20,5 @@ export default function geraElementos (geraCPF) {
 
     cpfGerado.appendChild(p);
     cpfGerado.appendChild(button);
-    eventoNoBotao();
+    eventoNoBotao(geraElementos, geraCPF);
 }

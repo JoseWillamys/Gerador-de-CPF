@@ -1,6 +1,8 @@
-export default function eventoNoBotao() {
+export default function eventoNoBotao(geraElementos, geraCPF) {
+    const cpfGerado = document.querySelector('.cpf-gerado');
     const button = document.querySelector('.gerar');
     button.addEventListener('click', () => {
-        location.reload();
+        cpfGerado.innerHTML = '';
+        geraElementos(geraCPF);
     })
 }

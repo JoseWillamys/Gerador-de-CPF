@@ -3,6 +3,11 @@ import GeraElementos from './modules/GeradorDeElementosHTML';
 
 import './assets/css/style.css';
 
-(function() {
-    GeraElementos(GeraCPF);
+(function () {
+    const cpfGerado = document.querySelector('.cpf-gerado');
+    const btnIniciar = document.querySelector('.iniciar');
+    btnIniciar.addEventListener('click', () => {
+        cpfGerado.innerHTML = '';
+        GeraElementos(GeraCPF);
+    })
 })();

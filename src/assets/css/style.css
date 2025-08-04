@@ -81,14 +81,14 @@ form button:hover {
     border: solid 1px black;
 }
 
-.gerar {
+.gerar, .iniciar {
     height: 25px;
     border: solid 1px black;;
     border-radius: 8px;
     transition: all 300ms ease-in-out;
 }
 
-.gerar:hover {
+.gerar:hover, .iniciar:hover {
     background: rgb(100, 163, 6);
     color: white;
     border: solid 1px white;
