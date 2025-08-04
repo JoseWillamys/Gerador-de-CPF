@@ -25,6 +25,7 @@ body {
     background: #2b8ea6;
     padding: 20px;
     border-radius: 10px;
+    text-align: center;
 }
 
 form {
@@ -63,4 +64,32 @@ form button {
 
 form button:hover {
     background: var(--primary-color-darker);
+}
+
+.cpf-gerado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.cpf-gerado p {
+    display: block;
+    padding: 1px 8px;
+    background: white;
+    border-radius: 8px;
+    border: solid 1px black;
+}
+
+.gerar {
+    height: 25px;
+    border: solid 1px black;;
+    border-radius: 8px;
+    transition: all 300ms ease-in-out;
+}
+
+.gerar:hover {
+    background: rgb(100, 163, 6);
+    color: white;
+    border: solid 1px white;
 }
