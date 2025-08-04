@@ -1,3 +1,5 @@
+import eventoNoBotao from "./eventoNoBotao";
+
 export default function geraElementos (geraCPF) {
     const cpfGerado = document.querySelector('.cpf-gerado');
     const cpf = new geraCPF();
@@ -18,4 +20,5 @@ export default function geraElementos (geraCPF) {
 
     cpfGerado.appendChild(p);
     cpfGerado.appendChild(button);
+    eventoNoBotao();
 }
